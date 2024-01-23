@@ -11,7 +11,7 @@ int main() {
     struct tm parts;
     localtime_s(&parts, &now_c);
 
-    int hour = parts.tm_hour - 12 * parts.tm_hour > 11 ? 1 : 0;
+    int hour = parts.tm_hour - 12 * (parts.tm_hour > 11 ? 1 : 0);
     switch (hour) {
     case 0:
         PlaySound(TEXT("C:/Customs/Chimes/00.wav"), NULL, SND_FILENAME);

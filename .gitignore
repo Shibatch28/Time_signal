@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+.vs/
+.vscode/
+Time_Signal/
+
 # Object files
 *.o
 *.ko
